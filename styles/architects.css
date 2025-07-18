@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -21,7 +25,8 @@
 
 /* dark 03 */
 .text-light-gray{
-  columns: #727272;
+  color: #727272;
+
 
 }
 
@@ -42,7 +47,23 @@
 
 }
 
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section{
+  margin-top: 130px;
+
+
+}
+
+
+
 /* header styles */
+header{
+  padding-bottom: 30px;
+}
 
 /* navbar related styles */
 .navbar{
@@ -74,14 +95,17 @@
 
 
 /* banner related style */
+
 .banner-content{
-  max-width: 850px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 50px;
+ 
 }
 .banner-title{
-  font-weight: 862px;
+  max-width: 862px;
+  margin: 0 auto;
+  font-weight: 700;
   font-size: 4rem;
   color: rgba(19, 19, 19, 1);
 }
@@ -90,7 +114,116 @@
   width: 100%;
 }
 
+/* team and feature related style */
+.teams{
+  margin: 84px auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+}
+
+.banner-discription{
+  max-width: 868px;
+  margin: 0 auto;
+}
+
+.our-features{
+ margin-left: 130px;
+ max-width: 530px;
+
+
+}
+
+.feature-title{
+  font-size: 2.8rem;
+  font-weight: 700px;
+}
+
+#features {
+  color: #FF900E;
+}
+
+#quick-list{
+  font-weight: 500;
+}
+
+.feature-head{
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.feature-content{
+  width: 50%;
+}
+.feature-img{
+  width: 50%;
+  position: relative;
+}
+
+.feature-img img{
+  width: 100%;
+}
+.feature-content h1{
+  font-size: 45px;
+  font-weight: 700;
+  max-width: 468px;
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+.feature-content p{
+  font-size: 16px;
+  max-width: 586px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.feature-card{
+  border-radius: 8px;
+  padding: 30px 42px 30px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.111);
+  margin-top: 20px;
+
+}
+.feature-card h4{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600px;
+  color: #131313;
+}
+.feature-card p{
+  padding: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  margin-bottom: 0;
+}
+.experience{
+  background-color: #FF900E;
+  padding: 40px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+
+}
+
+
 /* responsive media query */
+
 @media screen and (mas-width: 576px) {
   .navbar, .nav-links{
     flex-direction: column;
